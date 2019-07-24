@@ -34,7 +34,7 @@ def closeWindow():
     window.destroy()
 
 def changeFont():
-    content["font"]=fontVar + " " + str(sizeVar) + " " + typeVar
+    content["font"]=fontVar+" "+str(sizeVar)+" "+typeVar
 
 
 
@@ -71,8 +71,8 @@ def optionClick():
     cbxType=ttk.Combobox(optionWindow,values=typeOption)
     cbxType.set("normal")
 
-    fontBox.bind("<<ListboxSelected>>",fontChanged)
-    sizeBox.bind("<<SizeBoxSelected>>",sizeChanged)
+    fontBox.bind("<<ListboxSelect>>",fontChanged)
+    sizeBox.bind("<<SizeBoxSelect>>",sizeChanged)
     cbxType.bind("<<ComboboxSelected>>",typeChanged)
 
     lbfont.grid(row=0,column=0,padx=10,pady=5)
@@ -102,7 +102,7 @@ fileMenu.add_command(label="save",command=saveFile)
 fileMenu.add_separator()
 fileMenu.add_command(label="Close",command=closeWindow)
 
-mainMenu.add_command(label="Help")
+
 
 editMenu=Menu(mainMenu)
 mainMenu.add_cascade(label="Edit",menu=editMenu)
@@ -112,5 +112,6 @@ editMenu.add_command(label="Option",command=optionClick)
 content=Text(window)
 content.place(width=500,height=400)
 
+mainMenu.add_command(label="Help")
 
 window.mainloop()
