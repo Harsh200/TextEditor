@@ -24,7 +24,7 @@ mainMenu.add_cascade(label="File",menu=fileMenu)
 fileMenu.add_command(label="Open",command=openFile)
 fileMenu.add_command(label="save",command=saveFile)
 fileMenu.add_separator()
-fileMenu.add_command(label="Close")
+fileMenu.add_command(label="Close",command=closeWindow)
 
 mainMenu.add_command(label="Help")
 
