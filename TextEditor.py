@@ -28,6 +28,7 @@ def openFile():
 def closeWindow():
     window.destroy()
 
+def optionClick():
 
 window=Tk()
 mainMenu=Menu(window)
