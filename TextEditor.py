@@ -1,6 +1,11 @@
 from tkinter import *
 from tkinter import filedialog
 from tkinter import font
+from tkinter import ttk
+
+
+
+
 def saveFile():
     f=filedialog.asksaveasfile(mode="w",defaultextension=".txt")
     if f is None:
@@ -46,7 +51,7 @@ def optionClick():
     lbsize.grid(row=0, column=1, padx=10, pady=5)
     lbtype.grid(row=0, column=2, padx=10, pady=5)
     fontBox.grid(row=1,column=0,padx=10,pady=5)
-    sizeBox.grid(row=1,column=1,padx=10,padx=5)
+    sizeBox.grid(row=1,column=1,padx=10,pady=5)
     optionWindow.mainloop()
 
 window=Tk()
