@@ -129,3 +129,4 @@ viewMenu.add_command(label="Status Bar")
 mainMenu.add_command(label="Help")
 
 window.mainloop()
+#End of our text Editor application
