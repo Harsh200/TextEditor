@@ -5,10 +5,14 @@ def saveFile():
     f=filedialog.asksaveasfile(mode="w",defaultextension=".txt")
     if f is None:
         return
+    try:
+        textuserwrote=str(content.get(1.0,END))
+        f.write(textuserwrote)
+    except:
+        print("Cannot Save the file")
+    finally:
 
-    textuserwrote=str(content.get(1.0,END))
-    f.write(textuserwrote)
-    f.close()
+        f.close()
 
 
 def openFile():
