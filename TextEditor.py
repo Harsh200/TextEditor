@@ -121,7 +121,8 @@ editMenu.add_command(label="Option",command=optionClick)
 content=Text(window)
 content.place(width=500,height=400)
 
-mainMenu.add_command(label="View")
+viewMenu=Menu(mainMenu)
+
 mainMenu.add_command(label="Help")
 
 window.mainloop()
