@@ -1,6 +1,8 @@
 from tkinter import *
 from tkinter import filedialog
 
+def saveFile():
+
 
 def openFile():
     t=filedialog.askopenfile(mode="r",title="Select FIle",
