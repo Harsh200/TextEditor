@@ -3,6 +3,9 @@ from tkinter import filedialog
 
 def saveFile():
     f=filedialog.asksaveasfile(mode="w",defaultextension=".txt")
+    if f is None:
+        return
+
     textuserwrote=str(content.get(1.0,END))
     f.write(textuserwrote)
     f.close()
