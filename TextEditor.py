@@ -33,6 +33,9 @@ def openFile():
 def closeWindow():
     window.destroy()
 
+def fontChanged():
+
+
 def optionClick():
     optionWindow=Tk()
     lbfont=Label(optionWindow,text="Font")
