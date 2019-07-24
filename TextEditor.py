@@ -130,3 +130,4 @@ mainMenu.add_command(label="Help")
 
 window.mainloop()
 #End of our text Editor application
+#Updates also will be there soon
