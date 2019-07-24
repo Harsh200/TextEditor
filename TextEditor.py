@@ -49,6 +49,9 @@ def optionClick():
     cbxType=ttk.Combobox(optionWindow,values=typeOption)
     cbxType.set("normal")
 
+    fontBox.bind("<<ListboxSelected>>",fontChanged)
+    sizeBox.bind("<<SizeBoxSelected>>",sizeChanged)
+    cbxType.bind("<<ComboboxSelected>>",typeChanged)
 
     lbfont.grid(row=0,column=0,padx=10,pady=5)
     lbsize.grid(row=0, column=1, padx=10, pady=5)
