@@ -34,6 +34,7 @@ def closeWindow():
     window.destroy()
 
 def changeFont():
+    content["font"]=fontVar + " " + str(sizeVar) + " " + typeVar
 
 
 
@@ -93,6 +94,7 @@ typeVar="normal"
 
 mainMenu=Menu(window)
 window.config(menu=mainMenu)
+window.geometry("500x400")
 fileMenu=Menu(mainMenu)
 mainMenu.add_cascade(label="File",menu=fileMenu)
 fileMenu.add_command(label="Open",command=openFile)
@@ -107,8 +109,8 @@ mainMenu.add_cascade(label="Edit",menu=editMenu)
 editMenu.add_command(label="Undo")
 editMenu.add_command(label="Redo")
 editMenu.add_command(label="Option",command=optionClick)
-content=Text(window,width=100)
-content.grid(row=0,column=0,padx=5,pady=5)
+content=Text(window)
+content.place(width=500,height=400)
 
 
 window.mainloop()
