@@ -122,6 +122,8 @@ content=Text(window)
 content.place(width=500,height=400)
 
 viewMenu=Menu(mainMenu)
+mainMenu.add_cascade(label="View",menu=viewMenu)
+viewMenu.add_command(label="Status Bar")
 
 mainMenu.add_command(label="Help")
 
