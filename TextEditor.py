@@ -29,6 +29,7 @@ def closeWindow():
     window.destroy()
 
 def optionClick():
+    optionWindow=Tk()
 
 window=Tk()
 mainMenu=Menu(window)
