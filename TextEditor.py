@@ -49,11 +49,13 @@ def optionClick():
     cbxType=ttk.Combobox(optionWindow,values=typeOption)
     cbxType.set("normal")
 
+
     lbfont.grid(row=0,column=0,padx=10,pady=5)
     lbsize.grid(row=0, column=1, padx=10, pady=5)
     lbtype.grid(row=0, column=2, padx=10, pady=5)
     fontBox.grid(row=1,column=0,padx=10,pady=5)
     sizeBox.grid(row=1,column=1,padx=10,pady=5)
+    cbxType.grid(row=1,column=2,padx=10,pady=5)
     optionWindow.mainloop()
 
 window=Tk()
