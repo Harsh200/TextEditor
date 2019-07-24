@@ -1,4 +1,7 @@
 from tkinter import *
+
+
+def openFile():
 window=Tk()
 mainMenu=Menu(window)
 window.config(menu=mainMenu)
