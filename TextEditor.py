@@ -30,6 +30,7 @@ def closeWindow():
 
 def optionClick():
     optionWindow=Tk()
+    lb1=Label(optionWindow,text="font")
 
 window=Tk()
 mainMenu=Menu(window)
