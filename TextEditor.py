@@ -12,4 +12,5 @@ fileMenu.add_command(label="Close")
 mainMenu.add_command(label="Help")
 
 content=Text(window,width=100)
+content.grid(row=0,column=0,padx=5,pady=5)
 window.mainloop()
