@@ -61,7 +61,15 @@ def optionClick():
     cbxType.grid(row=1,column=2,padx=10,pady=5)
     optionWindow.mainloop()
 
+
+
+
 window=Tk()
+fontVar="Ariel"
+sizeVar=11
+typeVar="normal"
+
+
 mainMenu=Menu(window)
 window.config(menu=mainMenu)
 fileMenu=Menu(mainMenu)
