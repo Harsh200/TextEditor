@@ -38,6 +38,8 @@ def fontChanged(event):
     fontVar=event.widget.get(ANCHOR)
     changeFont()
 
+def sizeChanged(event):
+
 
 
 
