@@ -44,6 +44,9 @@ def sizeChanged(event):
     changeFont()
 
 
+def typeChanged(event):
+
+
 def optionClick():
     optionWindow=Tk()
     lbfont=Label(optionWindow,text="Font")
