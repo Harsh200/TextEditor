@@ -41,6 +41,10 @@ fileMenu.add_command(label="Close",command=closeWindow)
 
 mainMenu.add_command(label="Help")
 
+editMenu=Menu(mainMenu)
+
 content=Text(window,width=100)
 content.grid(row=0,column=0,padx=5,pady=5)
+
+
 window.mainloop()
