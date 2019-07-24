@@ -45,6 +45,9 @@ def sizeChanged(event):
 
 
 def typeChanged(event):
+    global typeVar
+    typeVar=event.widget.get()
+    changeFont()
 
 
 def optionClick():
