@@ -33,10 +33,13 @@ def openFile():
 def closeWindow():
     window.destroy()
 
-def fontChanged():
+def fontChanged(event):
     global fontVar
     fontVar=event.widget.get(ANCHOR)
     changeFont()
+
+
+
 
 
 def optionClick():
