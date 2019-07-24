@@ -34,6 +34,10 @@ def optionClick():
     lbsize = Label(optionWindow, text="Size")
     lbtype = Label(optionWindow, text="Type")
     fontBox=Listbox(optionWindow)
+    for f in font.families():
+        fontBox.insert(END,f)
+
+    optionWindow.mainloop()
 
 window=Tk()
 mainMenu=Menu(window)
