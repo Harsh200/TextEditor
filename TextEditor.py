@@ -38,7 +38,7 @@ def optionClick():
         fontBox.insert(END,f)
 
     sizeBox=Listbox(optionWindow)
-
+    for i in range(8,88,4):
 
 
 
