@@ -6,6 +6,11 @@ from tkinter import ttk
 
 
 
+def newFile(event=None):
+    window.title("Untitled")
+    global file_name
+    file_name = None
+    content.delete(1.0, END)
 
 
 def saveFile():
