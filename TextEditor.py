@@ -14,6 +14,8 @@ def openFile():
     content.insert(END,t.read())
     t.close()
 
+def closeWindow():
+    window.destroy()
 
 
 window=Tk()
