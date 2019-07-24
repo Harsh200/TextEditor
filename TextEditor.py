@@ -39,9 +39,9 @@ def fontChanged(event):
     changeFont()
 
 def sizeChanged(event):
-
-
-
+    global sizeVar
+    sizeVar = event.widget.get(ANCHOR)
+    changeFont()
 
 
 def optionClick():
