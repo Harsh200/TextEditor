@@ -36,6 +36,12 @@ def optionClick():
     fontBox=Listbox(optionWindow)
     for f in font.families():
         fontBox.insert(END,f)
+
+    sizeBox=Listbox(optionWindow)
+
+
+
+
     lbfont.grid(row=0,column=0,padx=10,pady=5)
     lbsize.grid(row=0, column=1, padx=10, pady=5)
     lbtype.grid(row=0, column=2, padx=10, pady=5)
