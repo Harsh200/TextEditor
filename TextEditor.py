@@ -34,6 +34,9 @@ def closeWindow():
     window.destroy()
 
 def fontChanged():
+    global fontVar
+    fontVar=event.widget.get(ANCHOR)
+    changeFont()
 
 
 def optionClick():
