@@ -45,6 +45,7 @@ def optionClick():
     sizeBox=Listbox(optionWindow)
     for i in range(8,88,4):
         sizeBox.insert(END,i)
+    typeOption=("normal","bold","normal italic","bold italic")
 
 
     lbfont.grid(row=0,column=0,padx=10,pady=5)
