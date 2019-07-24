@@ -45,6 +45,7 @@ editMenu=Menu(mainMenu)
 mainMenu.add_cascade(label="Edit",menu=editMenu)
 editMenu.add_command(label="Undo")
 editMenu.add_command(label="Redo")
+editMenu.add_command(label="Option",command=optionClick)
 content=Text(window,width=100)
 content.grid(row=0,column=0,padx=5,pady=5)
 
