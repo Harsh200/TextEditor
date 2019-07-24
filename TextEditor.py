@@ -6,6 +6,8 @@ from tkinter import ttk
 
 
 
+
+
 def saveFile():
     f=filedialog.asksaveasfile(mode="w",defaultextension=".txt")
     if f is None:
@@ -92,11 +94,13 @@ sizeVar=11
 typeVar="normal"
 
 
+
 mainMenu=Menu(window)
 window.config(menu=mainMenu)
-window.geometry("500x400")
+window.geometry('500x400')
 fileMenu=Menu(mainMenu)
 mainMenu.add_cascade(label="File",menu=fileMenu)
+fileMenu.add_command(label="NewFile",command=newFile)
 fileMenu.add_command(label="Open",command=openFile)
 fileMenu.add_command(label="save",command=saveFile)
 fileMenu.add_separator()
@@ -112,6 +116,7 @@ editMenu.add_command(label="Option",command=optionClick)
 content=Text(window)
 content.place(width=500,height=400)
 
+mainMenu.add_command(label="View")
 mainMenu.add_command(label="Help")
 
 window.mainloop()
