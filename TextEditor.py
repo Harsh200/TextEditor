@@ -33,6 +33,8 @@ def optionClick():
     lbfont=Label(optionWindow,text="Font")
     lbsize = Label(optionWindow, text="Size")
     lbtype = Label(optionWindow, text="Type")
+    fontBox=Listbox(optionWindow)
+
 window=Tk()
 mainMenu=Menu(window)
 window.config(menu=mainMenu)
