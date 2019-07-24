@@ -94,6 +94,7 @@ def optionClick():
 
 
 window=Tk()
+window.title("Technical Pad")
 fontVar="Ariel"
 sizeVar=11
 typeVar="normal"
