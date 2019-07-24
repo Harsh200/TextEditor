@@ -30,8 +30,9 @@ def closeWindow():
 
 def optionClick():
     optionWindow=Tk()
-    lb1=Label(optionWindow,text="font")
-
+    lbfont=Label(optionWindow,text="Font")
+    lbsize = Label(optionWindow, text="Size")
+    lbtype = Label(optionWindow, text="Type")
 window=Tk()
 mainMenu=Menu(window)
 window.config(menu=mainMenu)
