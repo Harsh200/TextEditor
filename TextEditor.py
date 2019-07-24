@@ -15,10 +15,15 @@ def saveFile():
 
 
 def openFile():
-    t=filedialog.askopenfile(mode="r",title="Select FIle",
+    try:
+        t=filedialog.askopenfile(mode="r",title="Select FIle",
                              filetypes=[("All Files","*.*")])
-    content.insert(END,t.read())
-    t.close()
+        content.insert(END,t.read())
+    except:
+        print("Cannot Load the file")
+    finally:
+        if t:
+            t.close()
 
 def closeWindow():
     window.destroy()
