@@ -1,7 +1,14 @@
 from tkinter import *
 from tkinter import filedialog
 
+
 def openFile():
+    t=filedialog.askopenfile(mode="r",title="Select FIle",
+                             filetypes=[("All Files","*.*")])
+    content.insert(END,t.read())
+    t.close()
+
+
 
 window=Tk()
 mainMenu=Menu(window)
